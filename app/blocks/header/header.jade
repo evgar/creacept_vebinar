@@ -2,7 +2,8 @@ include ../logo/logo
 
 mixin header()
 	header.header&attributes(attributes)
-		.header__logo
-			+logo
-		h3.header__text Мы обучаем зарабатывать на Forex
+		div.header__wrapper
+			.header__logo
+				+logo
+			h3.header__text Мы обучаем зарабатывать на Forex
 		block

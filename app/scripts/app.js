@@ -1,6 +1,7 @@
-import svg4everybody from 'svg4everybody';
 import $ from 'jquery';
+// import './jquery-ui.min.js';
+import 'jquery-ui-dist/jquery-ui.min.js';
+// import 'jquery';
 
-$(() => {
-	svg4everybody();
-});
+// import 'jquery-menu/jquery.menu.min.js';
+import '../blocks/menu/menu.js';
