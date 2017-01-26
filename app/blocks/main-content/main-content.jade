@@ -1,0 +1,14 @@
+include ../content-caption/content-caption
+include ../video/video
+include ../form-registration/form-registration
+
+mixin main-content()
+	main.main-content
+		+content-caption
+		section.main-content__info
+			.main-content__wrapper
+				+video
+				+form-registration
+
+
+		block
