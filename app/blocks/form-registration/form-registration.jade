@@ -1,4 +1,11 @@
 include ../registration-item/registration-item
-mixin form-registration()
-	+b.form-registration&attributes(attributes)
+include ../registration-button/registration-button
+
+mixin form-registration(names)
+	form.form-registration
+		ul.form-registration__list
+				each item in names
+					li.form-registration__item
+						+registration-item(item)
+		+registration-button
 		block

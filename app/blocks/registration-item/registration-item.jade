@@ -1,2 +1,6 @@
-mixin registration-item()
-	input(type='text')
+include ../question-tooltip/question-tooltip
+
+mixin registration-item(foo)
+	input.registration-item(type='#{foo.type}' placeholder='#{foo.placeholder}')
+	.registration-item__tooltip
+		+question-tooltip(foo.tooltip)
