@@ -1,5 +1,15 @@
 .video
 	position relative
+
+	+below(1041px)
+		margin 0
+
+	iframe
+
+		+below(1041px)
+			width 555px
+			height 310px
+
 	&__play-button
 		//background url("../../images/play-button.png") no-repeat
 		background url("../../images/test.jpg") no-repeat
@@ -11,3 +21,8 @@
 		top 0
 		left 0
 		cursor pointer
+
+		+below(1041px)
+			background url(../../images/play_1040.jpg) no-repeat
+			width 555px
+			height 310px

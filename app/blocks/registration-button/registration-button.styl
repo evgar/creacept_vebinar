@@ -1,8 +1,20 @@
 .registration-button
 	color: white
-	font 1.875em 'Raleway', sans-serif
-	border 4px solid rgba(255,255,255, 0.9)
+	font 1.935em 'Raleway', sans-serif
+	border 4px solid rgba(255,255,255, 0.7)
 	background-image linear-gradient(to top, #002446 1%, #0046b0 3%, #249bdf 97%, #39b7ff 97%, #249bdf)
 	border-radius 37px
-	padding 19px 42px
+	padding 15px 41px
+	margin 4px 0 0 8px
 
+	+below(1041px)
+		font 1.438em 'Raleway', sans-serif
+		padding 15px 33px
+		margin 3px 0 0 2px
+
+	&:hover
+		background-image linear-gradient(to top, #2a3065 1%, #554bb3 3%, #8d9dfe 97%, #aebbf5 97%, #7781e4)
+
+	&:active
+		background-image linear-gradient(to top, #2a3065 1%, #554bb3 3%, #8d9dfe 97%, #aebbf5 97%, #7781e4)
+		box-shadow inset 0 0 17px 5px rgba(0,1,1,.45)

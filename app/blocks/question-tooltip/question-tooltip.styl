@@ -1,5 +1,15 @@
 .question-tooltip
 	display block
-	background url('../../images/question-mark.png')
+	background url('../../images/question-mark.png') no-repeat
 	width 26px
 	height 26px
+
+	+below(1041px)
+		background-size 21px
+
+	&:hover
+		cursor pointer
+		background url('../../images/active-question-mark.png') no-repeat
+
+		+below(1041px)
+			background-size 21px

@@ -13,6 +13,10 @@
 	font-family 'Raleway'
 	cursor pointer
 
+	+below(1041px)
+		max-height 42px
+		max-width 1015px
+
 	&__home
 		width 72px
 		height 52px
@@ -20,6 +24,10 @@
 		background-color #5277bb
 		position relative
 		left 27px
+
+		+below(1040px)
+			height 42px
+			width 56px
 
 		&-link
 			width 100%
@@ -34,16 +42,27 @@
 		text-transform uppercase
 		width 129px
 		text-align center
+
+		+below(1041px)
+			width 98px
+
 		div
 			&:hover
 				color #4e6fac
 
+		+below(1041px)
+			font-size 0.95em
+			padding 12px 0
+
 	&__sub-menu
 		text-align left
 		text-transform none
-		padding 15px 0 15px 21px
+		padding 12px 0 12px 21px
 		border-bottom 1px solid #6d6d6d
 
 .menu-items__item > ul
 	background #252525
 	width 200px
+
+	+below(1041px)
+		width 155px

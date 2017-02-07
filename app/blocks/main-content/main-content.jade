@@ -1,6 +1,7 @@
 include ../content-caption/content-caption
 include ../video/video
 include ../form-registration/form-registration
+include ../shot/shot
 
 mixin main-content()
 	main.main-content
@@ -9,4 +10,5 @@ mixin main-content()
 			.main-content__wrapper
 				+video
 				+form-registration(getData('registration-form'))
+			+bullet
 		block

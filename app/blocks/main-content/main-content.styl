@@ -1,7 +1,21 @@
 .main-content
+
 	&__info
-		background url("../../images/main-content-background.jpg")
-	&__wrapper
-		width 1226px
+		background url("../../images/main-content-background.jpg") no-repeat
+		min-height 770px
+		width 1600px
 		margin 0 auto
 
+		+below(1041px)
+			background url("../../images/main-content-background-1040.jpg") no-repeat
+			width 1040px
+
+	&__wrapper
+		width 1226px
+		display flex
+		margin 54px auto 0
+		justify-content space-between
+
+		+below(1041px)
+			width 960px
+			//margin 42px 12px 0
