@@ -2,12 +2,16 @@
 
 ### Склонируй репозиторий и перейди в папку проекта
 ```
-git clone git@github.com:CSSSR/csssr-project-template.git new-project && cd new-project
+git clone https://github.com/evgar/creacept_vebinar.git creacept_vebinar && cd creacept_vebinar
 ```
 
 ### Установи модули
 ```
 npm i
+```
+### или намного быстрее с помощью yarn
+```
+yarn i
 ```
 
 ### Запусти шаблон
